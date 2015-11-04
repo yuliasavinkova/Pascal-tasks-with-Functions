@@ -1,0 +1,18 @@
+//Составить программу нахождения наибольшего общего делителя трех натуральных чисел(с помощью функции).
+
+program noddd;
+var a,b,c:integer;
+
+function nod(a,b:integer):integer;
+begin
+  while a<>b do
+  if a>b then a:=a-b
+    else b:=b-a;
+    nod:=a;
+end;
+
+begin
+writeln ('Введите 3 натуральных числа');
+readln (a,b,c);
+writeln ('НОД=',nod(nod(a,b),c));
+end.
