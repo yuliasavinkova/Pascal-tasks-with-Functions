@@ -12,7 +12,7 @@ begin
 end;
 
 begin
-writeln ('Введите 3 натуральных числа');
-readln (a,b,c);
-writeln ('НОД=',nod(nod(a,b),c));
+  writeln ('Введите 3 натуральных числа');
+  readln (a,b,c);
+  writeln ('НОД=',nod(nod(a,b),c));
 end.
