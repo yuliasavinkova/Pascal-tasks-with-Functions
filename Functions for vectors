@@ -1,0 +1,39 @@
+//Вычисление суммы 2 векторов. Умножение векторов на число. Вычисление длины векторов.
+
+program vectors;
+uses crt;
+var x1,x2,y1,y2,l:integer;
+
+function sum(a,b:integer):integer;
+begin
+  sum:=a+b;
+end;
+
+function prod(a,l:integer):integer;
+begin
+  prod:=l*a;
+end;
+
+function dl(a,b:real):real;
+begin
+  dl:=sqrt(sqr(a)+sqr(b));
+end;
+
+begin
+  clrscr;
+  writeln ('Введите координаты первого вектора (x,y)');
+  readln(x1,y1);
+  writeln ('Введите координаты второго вектора (x,y)');
+  readln(x2,y2);
+  writeln ('Сумма этих двух векторов:(',sum(x1,x2),';',sum(y1,y2),')');
+  readln;
+  writeln ('Введите число на которое нужно умножить векторы');
+  readln(l);
+  writeln('Умножение векторов на число:');
+  writeln('Первый вектор:(',prod(x1,l),';',prod(y1,l),')');
+  writeln('Второй вектор:(',prod(x2,l),';',prod(y2,l),')');
+  readln;
+  writeln('Длина первого вектора=',dl(x1,y1):4:2);
+  writeln('Длина второго вектора=',dl(x2,y2):4:2);
+  readln;
+end.
